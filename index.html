@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    
+var a={
+  name: "Aditya",
+  work: "Student",
+  clg: "ssism"
+};
+document.write(a.name +"<br>");
+document.write(a.work +"<br>");
+document.write(a.clg +"<br>");
+document.write("<hr>");
+for(var key in a){
+  document.write(key +" : "+a[key]+"<br>");
+}
+
+var arr=[1,3,4,2,7,4,3];
+document.write("<hr>");
+arr.forEach(function(num,index){
+  document.writeln(index+" : "+ num +"<br>");
+})
+document.writeln("<hr>");
+var arr1=[
+  {name:"rahul"},
+  {age: 25},
+  {wrk :"businessman"}
+]
+
+arr1.forEach(function(obj){
+  for(let key in obj){
+    document.writeln(key+" : "+obj[key]+"<br>")
+  }
+})
+document.writeln("<hr>")
+var b={
+  num: 1,
+  name: "hero",
+  sub:["maths","science","physics","chemistry"]
+}
+b.sub.forEach(function(subject){
+document.writeln(subject+"<br>")
+})
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
